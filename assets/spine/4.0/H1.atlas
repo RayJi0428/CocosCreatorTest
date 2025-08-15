@@ -1,0 +1,8 @@
+H1.png
+size:256,256
+filter:Linear,Linear
+scale:0.5
+BackLight
+bounds:2,2,86,139
+SeaHorse
+bounds:90,10,78,131

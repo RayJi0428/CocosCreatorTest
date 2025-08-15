@@ -1,0 +1,160 @@
+
+Sym_H2.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BackLight_Leg1
+  rotate: true
+  xy: 2, 2
+  size: 35, 28
+  orig: 36, 29
+  offset: 0, 1
+  index: -1
+BackLight_Leg2
+  rotate: false
+  xy: 70, 2
+  size: 59, 40
+  orig: 60, 41
+  offset: 0, 1
+  index: -1
+BackLight_Leg3
+  rotate: false
+  xy: 134, 65
+  size: 50, 61
+  orig: 51, 62
+  offset: 0, 1
+  index: -1
+BackLight_Leg4
+  rotate: true
+  xy: 255, 55
+  size: 33, 45
+  orig: 33, 45
+  offset: 0, 0
+  index: -1
+BackLight_Leg5
+  rotate: true
+  xy: 382, 79
+  size: 47, 56
+  orig: 47, 57
+  offset: 0, 1
+  index: -1
+BackLight_Leg6
+  rotate: false
+  xy: 186, 85
+  size: 67, 41
+  orig: 67, 41
+  offset: 0, 0
+  index: -1
+BackLight_Leg7
+  rotate: false
+  xy: 440, 77
+  size: 55, 49
+  orig: 55, 49
+  offset: 0, 0
+  index: -1
+BackLight_Leg8
+  rotate: false
+  xy: 236, 3
+  size: 37, 42
+  orig: 37, 43
+  offset: 0, 1
+  index: -1
+BackLight_head
+  rotate: false
+  xy: 2, 39
+  size: 66, 87
+  orig: 67, 87
+  offset: 0, 0
+  index: -1
+EyeLid_L
+  rotate: false
+  xy: 497, 111
+  size: 10, 15
+  orig: 11, 15
+  offset: 0, 0
+  index: -1
+EyeLid_R
+  rotate: false
+  xy: 302, 74
+  size: 16, 14
+  orig: 17, 15
+  offset: 0, 1
+  index: -1
+Eyeball_L
+  rotate: false
+  xy: 32, 6
+  size: 5, 5
+  orig: 5, 5
+  offset: 0, 0
+  index: -1
+Eyeball_R
+  rotate: false
+  xy: 244, 78
+  size: 5, 5
+  orig: 5, 5
+  offset: 0, 0
+  index: -1
+Leg_1
+  rotate: false
+  xy: 32, 13
+  size: 31, 24
+  orig: 32, 25
+  offset: 0, 1
+  index: -1
+Leg_2
+  rotate: false
+  xy: 186, 47
+  size: 56, 36
+  orig: 56, 36
+  offset: 0, 0
+  index: -1
+Leg_3
+  rotate: true
+  xy: 322, 79
+  size: 47, 58
+  orig: 47, 58
+  offset: 0, 0
+  index: -1
+Leg_4
+  rotate: false
+  xy: 275, 16
+  size: 29, 37
+  orig: 29, 37
+  offset: 0, 0
+  index: -1
+Leg_5
+  rotate: true
+  xy: 182, 2
+  size: 43, 52
+  orig: 44, 52
+  offset: 0, 0
+  index: -1
+Leg_6
+  rotate: false
+  xy: 255, 90
+  size: 65, 36
+  orig: 65, 37
+  offset: 0, 1
+  index: -1
+Leg_7
+  rotate: true
+  xy: 134, 11
+  size: 52, 46
+  orig: 52, 46
+  offset: 0, 0
+  index: -1
+Leg_8
+  rotate: true
+  xy: 320, 44
+  size: 33, 37
+  orig: 34, 38
+  offset: 0, 1
+  index: -1
+MainBody
+  rotate: false
+  xy: 70, 44
+  size: 62, 82
+  orig: 62, 83
+  offset: 0, 1
+  index: -1

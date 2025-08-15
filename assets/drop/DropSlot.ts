@@ -3,20 +3,14 @@ import { BaseSlotParser } from './BaseSlotParser';
 import { BaseSymbol } from './BaseSymbol';
 const { ccclass, property } = _decorator;
 
-@ccclass('DropSlot')
-export class DropSlot extends Component {
-
-    @property
-    public numColumn: number = 0;
-
-    @property
-    public numRow: number = 0;
-
-    @property({ tooltip: "掉出時間", group: "掉出" })
-    public outDuration: number = 0.18;
+@ccclass('SpeedConfig')
+export class SpeedConfig {
 
     @property({ tooltip: "掉出移動距離", group: "掉出" })
     public outDistance: number = 600;
+
+    @property({ tooltip: "掉出時間", group: "掉出" })
+    public outDuration: number = 0.18;
 
     @property({ tooltip: "列間隔", group: "掉出" })
     public outRowDelay: number = 0;
@@ -24,7 +18,6 @@ export class DropSlot extends Component {
     @property({ tooltip: "軸間隔", group: "掉出" })
     public outColumnDelay: number = 0;
 
-    //---------------------------- 
     @property({ tooltip: "掉入時間", group: "掉入" })
     public inDuration: number = 0.18;
 
@@ -36,6 +29,27 @@ export class DropSlot extends Component {
 
     @property({ tooltip: "軸間隔", group: "掉入" })
     public inColumnDelay: number = 0.05;
+}
+
+@ccclass('DropSlot')
+export class DropSlot extends Component {
+
+    @property
+    public numColumn: number = 0;
+
+    @property
+    public numRow: number = 0;
+
+    @property({ type: SpeedConfig, tooltip: "一般", group: "速度" })
+    public normal: SpeedConfig = new SpeedConfig();
+
+    @property({ type: SpeedConfig, tooltip: "閃電", group: "速度" })
+    public speed: SpeedConfig = new SpeedConfig();
+
+    @property({ type: SpeedConfig, tooltip: "Turbo", group: "速度" })
+    public turbo: SpeedConfig = new SpeedConfig();
+
+    private curConfig: SpeedConfig;
 
     /**圖示map */
     private symbolMap: BaseSymbol[][] = [];
@@ -61,6 +75,8 @@ export class DropSlot extends Component {
                 this.coordinateMap[col][row] = symbol.node.getPosition();
             }
         }
+
+        this.curConfig = this.normal;
     }
 
     update(deltaTime: number) {
@@ -83,9 +99,9 @@ export class DropSlot extends Component {
                 let coordinate = this.coordinateMap[col][row];
                 Tween.stopAllByTarget(symbol.node);
                 tween(symbol.node)
-                    .delay(this.outColumnDelay * col)
-                    .delay(this.outRowDelay * (this.numRow - row))
-                    .to(this.outDuration, { position: new Vec3(coordinate.x, coordinate.y - this.outDistance, 0) })
+                    .delay(this.curConfig.outColumnDelay * col)
+                    .delay(this.curConfig.outRowDelay * (this.numRow - row))
+                    .to(this.curConfig.outDuration, { position: new Vec3(coordinate.x, coordinate.y - this.curConfig.outDistance, 0) })
                     .call(() => {
                         count--;
                         if (count <= 0) {
@@ -110,14 +126,20 @@ export class DropSlot extends Component {
             for (let row: number = this.numRow - 1; row > -1; --row) {
                 let symbol = this.symbolMap[col][row];
                 let coordinate = this.coordinateMap[col][row];
-                symbol.node.setPosition(new Vec3(coordinate.x, coordinate.y + this.inDistance, 0));
+                symbol.node.setPosition(new Vec3(coordinate.x, coordinate.y + this.curConfig.inDistance, 0));
                 Tween.stopAllByTarget(symbol.node);
                 tween(symbol.node)
-                    .delay(this.inColumnDelay * col)
-                    .delay(this.inRowDelay * (this.numRow - row))
-                    .to(this.inDuration, { position: coordinate }, { easing: easing.linear })
+                    .delay(this.curConfig.inColumnDelay * col)
+                    .delay(this.curConfig.inRowDelay * (this.numRow - row))
+                    .to(this.curConfig.inDuration, { position: coordinate }, { easing: easing.linear })
                     .call(() => {
                         count--;
+
+                        //到達瞇牌位置
+                        if (col == miPos.col && row == miPos.row) {
+                        }
+
+                        //全部掉落完成
                         if (count <= 0) {
                             complete?.();
                         }

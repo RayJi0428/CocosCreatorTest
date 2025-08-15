@@ -1,0 +1,153 @@
+
+fs_mahjong.png
+size: 738,549
+format: RGBA4444
+filter: Linear,Linear
+repeat: none
+JT/TS/1.bg
+  rotate: false
+  xy: 577, 94
+  size: 30, 74
+  orig: 720, 1600
+  offset: 324, 759
+  index: -1
+JT/TS/2.particular/2.particular_01
+  rotate: true
+  xy: 305, 1
+  size: 129, 140
+  orig: 720, 1600
+  offset: 199, 787
+  index: -1
+JT/TS/2.particular/2.particular_02
+  rotate: false
+  xy: 446, 90
+  size: 130, 149
+  orig: 720, 1600
+  offset: 198, 785
+  index: -1
+JT/TS/2.particular/2.particular_03
+  rotate: true
+  xy: 587, 304
+  size: 120, 150
+  orig: 720, 1600
+  offset: 208, 784
+  index: -1
+JT/TS/2.particular/2.particular_04
+  rotate: true
+  xy: 587, 425
+  size: 123, 150
+  orig: 720, 1600
+  offset: 205, 784
+  index: -1
+JT/TS/2.particular/2.particular_05
+  rotate: true
+  xy: 1, 1
+  size: 129, 151
+  orig: 720, 1600
+  offset: 199, 783
+  index: -1
+JT/TS/2.particular/2.particular_06
+  rotate: true
+  xy: 153, 1
+  size: 129, 151
+  orig: 720, 1600
+  offset: 199, 783
+  index: -1
+JT/TS/2.particular/2.particular_07
+  rotate: true
+  xy: 578, 169
+  size: 134, 153
+  orig: 720, 1600
+  offset: 194, 782
+  index: -1
+JT/TS/2.particular/2.particular_08
+  rotate: false
+  xy: 442, 240
+  size: 135, 154
+  orig: 720, 1600
+  offset: 193, 781
+  index: -1
+JT/TS/2.particular/2.particular_09
+  rotate: false
+  xy: 442, 395
+  size: 144, 153
+  orig: 720, 1600
+  offset: 184, 781
+  index: -1
+JT/TS/4.line/4.line_00
+  rotate: false
+  xy: 1, 180
+  size: 48, 368
+  orig: 720, 1600
+  offset: 304, 596
+  index: -1
+JT/TS/4.line/4.line_01
+  rotate: false
+  xy: 50, 180
+  size: 48, 368
+  orig: 720, 1600
+  offset: 304, 596
+  index: -1
+JT/TS/4.line/4.line_02
+  rotate: false
+  xy: 99, 180
+  size: 48, 368
+  orig: 720, 1600
+  offset: 304, 596
+  index: -1
+JT/TS/4.line/4.line_03
+  rotate: false
+  xy: 148, 180
+  size: 48, 368
+  orig: 720, 1600
+  offset: 304, 596
+  index: -1
+JT/TS/4.line/4.line_04
+  rotate: false
+  xy: 197, 180
+  size: 48, 368
+  orig: 720, 1600
+  offset: 304, 596
+  index: -1
+JT/TS/4.line/4.line_05
+  rotate: false
+  xy: 246, 180
+  size: 48, 368
+  orig: 720, 1600
+  offset: 304, 596
+  index: -1
+JT/TS/4.line/4.line_06
+  rotate: false
+  xy: 295, 180
+  size: 48, 368
+  orig: 720, 1600
+  offset: 304, 596
+  index: -1
+JT/TS/4.line/4.line_07
+  rotate: false
+  xy: 344, 180
+  size: 48, 368
+  orig: 720, 1600
+  offset: 304, 596
+  index: -1
+JT/TS/4.line/4.line_08
+  rotate: true
+  xy: 1, 131
+  size: 48, 368
+  orig: 720, 1600
+  offset: 304, 596
+  index: -1
+JT/TS/4.line/4.line_09
+  rotate: false
+  xy: 393, 180
+  size: 48, 368
+  orig: 720, 1600
+  offset: 304, 596
+  index: -1
+JT/TS/flares_0
+  rotate: false
+  xy: 446, 33
+  size: 56, 56
+  orig: 64, 64
+  offset: 4, 4
+  index: -1

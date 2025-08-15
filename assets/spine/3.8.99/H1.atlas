@@ -1,0 +1,20 @@
+
+H1.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BackLight
+  rotate: false
+  xy: 2, 2
+  size: 86, 139
+  orig: 86, 139
+  offset: 0, 0
+  index: -1
+SeaHorse
+  rotate: false
+  xy: 90, 10
+  size: 78, 131
+  orig: 78, 131
+  offset: 0, 0
+  index: -1

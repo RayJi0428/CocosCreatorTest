@@ -1,0 +1,112 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "27f50674-1c76-4c02-b5fb-083996686bd6",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "26efe": {
+      "importer": "gltf-animation",
+      "uuid": "27f50674-1c76-4c02-b5fb-083996686bd6@26efe",
+      "displayName": "",
+      "id": "26efe",
+      "name": "dice_RunIn_right_Start.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.6666666865348816
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "4232f": {
+      "importer": "gltf-animation",
+      "uuid": "27f50674-1c76-4c02-b5fb-083996686bd6@4232f",
+      "displayName": "",
+      "id": "4232f",
+      "name": "dice_RunIn_right_Stop.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "speed": 1,
+        "sample": 30,
+        "span": {
+          "from": 0.6666666666666666,
+          "to": 0.6666666865348816
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "3e218": {
+      "importer": "gltf-scene",
+      "uuid": "27f50674-1c76-4c02-b5fb-083996686bd6@3e218",
+      "displayName": "",
+      "id": "3e218",
+      "name": "dice_RunIn_right.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 0.6666666865348816,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "dice_RunIn_right_Start",
+            "from": 0,
+            "to": 0.6666666865348816,
+            "wrapMode": 2
+          },
+          {
+            "name": "dice_RunIn_right_Stop",
+            "from": 0.6666666666666666,
+            "to": 0.6666666865348816,
+            "wrapMode": 2,
+            "speed": 1
+          }
+        ]
+      }
+    ],
+    "redirect": "27f50674-1c76-4c02-b5fb-083996686bd6@3e218",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "27f50674-1c76-4c02-b5fb-083996686bd6@3e218"
+      ]
+    }
+  }
+}
